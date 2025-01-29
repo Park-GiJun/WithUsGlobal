@@ -1,0 +1,80 @@
+<!-- src/lib/components/ServicesSection.svelte -->
+<script lang="ts">
+    import languageStore, { t } from '$lib/stores/language';
+
+    const services = [
+        {
+            icon: '🌏',
+            title: {
+                ko: '해외 채용',
+                en: 'Global Recruitment'
+            },
+            description: {
+                ko: '전 세계 기업들과 협력하여 최적의 취업 기회를 제공합니다.',
+                en: 'We provide optimal employment opportunities through collaboration with global companies.'
+            }
+        },
+        {
+            icon: '🎓',
+            title: {
+                ko: '유학 프로그램',
+                en: 'Study Abroad'
+            },
+            description: {
+                ko: '맞춤형 유학 프로그램으로 글로벌 교육의 기회를 제공합니다.',
+                en: 'We offer customized study abroad programs for global educational opportunities.'
+            }
+        },
+        {
+            icon: '💼',
+            title: {
+                ko: '취업 컨설팅',
+                en: 'Career Consulting'
+            },
+            description: {
+                ko: '경력 개발과 이력서 작성부터 면접 준비까지 전문적인 지원을 제공합니다.',
+                en: 'We provide professional support from career development and resume writing to interview preparation.'
+            }
+        },
+        {
+            icon: '🤝',
+            title: {
+                ko: '기업 파트너십',
+                en: 'Corporate Partnership'
+            },
+            description: {
+                ko: '글로벌 기업들과의 파트너십을 통해 다양한 비즈니스 기회를 창출합니다.',
+                en: 'We create diverse business opportunities through partnerships with global companies.'
+            }
+        }
+    ];
+</script>
+
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {$languageStore === 'ko' ? '우리의 서비스' : 'Our Services'}
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                {$languageStore === 'ko'
+                    ? '위더스글로벌은 글로벌 인재 채용과 교육을 위한 종합 솔루션을 제공합니다.'
+                    : 'WithUs Global provides comprehensive solutions for global talent recruitment and education.'}
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {#each services as service}
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl mb-4">{service.icon}</div>
+                    <h3 class="text-xl font-semibold mb-3">
+                        {service.title[$languageStore]}
+                    </h3>
+                    <p class="text-gray-600">
+                        {service.description[$languageStore]}
+                    </p>
+                </div>
+            {/each}
+        </div>
+    </div>
+</section>
