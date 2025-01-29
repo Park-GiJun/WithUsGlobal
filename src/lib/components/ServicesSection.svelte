@@ -6,34 +6,34 @@
         {
             icon: '🌏',
             title: {
-                ko: '해외 채용',
-                en: 'Global Recruitment'
+                ko: '한국 취업',
+                en: 'Korea Recruitment'
             },
             description: {
-                ko: '전 세계 기업들과 협력하여 최적의 취업 기회를 제공합니다.',
-                en: 'We provide optimal employment opportunities through collaboration with global companies.'
+                ko: '국내 기업 취업.',
+                en: '.'
             }
         },
         {
             icon: '🎓',
             title: {
-                ko: '유학 프로그램',
-                en: 'Study Abroad'
+                ko: '구인',
+                en: '구인'
             },
             description: {
-                ko: '맞춤형 유학 프로그램으로 글로벌 교육의 기회를 제공합니다.',
-                en: 'We offer customized study abroad programs for global educational opportunities.'
+                ko: '국내 구인.',
+                en: '.'
             }
         },
         {
             icon: '💼',
             title: {
-                ko: '취업 컨설팅',
-                en: 'Career Consulting'
+                ko: '투자 컨설팅',
+                en: 'Invest Consulting'
             },
             description: {
-                ko: '경력 개발과 이력서 작성부터 면접 준비까지 전문적인 지원을 제공합니다.',
-                en: 'We provide professional support from career development and resume writing to interview preparation.'
+                ko: '투자 컨설팅.',
+                en: '.'
             }
         },
         {

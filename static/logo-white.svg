@@ -1,16 +1,16 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <!-- 지구본 원 -->
-    <circle cx="100" cy="80" r="50" stroke="green" stroke-width="2" fill="none"/>
+    <circle cx="100" cy="80" r="50" stroke="white" stroke-width="2" fill="none"/>
 
     <!-- 경도선 -->
-    <path d="M100 30 Q130 80 100 130 Q70 80 100 30" stroke="green" stroke-width="2" fill="none"/>
-    <path d="M80 30 Q110 80 80 130" stroke="green" stroke-width="2" fill="none"/>
-    <path d="M120 30 Q90 80 120 130" stroke="green" stroke-width="2" fill="none"/>
+    <path d="M100 30 Q130 80 100 130 Q70 80 100 30" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M80 30 Q110 80 80 130" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M120 30 Q90 80 120 130" stroke="white" stroke-width="2" fill="none"/>
 
     <!-- 위도선 -->
-    <ellipse cx="100" cy="80" rx="40" ry="20" stroke="green" stroke-width="2" fill="none"/>
-    <ellipse cx="100" cy="80" rx="30" ry="10" stroke="green" stroke-width="2" fill="none"/>
+    <ellipse cx="100" cy="80" rx="40" ry="20" stroke="white" stroke-width="2" fill="none"/>
+    <ellipse cx="100" cy="80" rx="30" ry="10" stroke="white" stroke-width="2" fill="none"/>
 
     <!-- 텍스트 -->
-    <text x="50" y="170" font-size="20" font-family="Arial" fill="green">WithUsGlobal</text>
+    <text x="40" y="170" font-size="20" font-family="Arial" fill="white">WithUsGlobal</text>
 </svg>
